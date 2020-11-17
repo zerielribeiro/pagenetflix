@@ -5,6 +5,7 @@ import './App.css';
 import MovieRow from './components/MovieRow';
 import FeaturedMovir from './components/FeaturedMovie';
 import FeaturedMovie from './components/FeaturedMovie';
+import Header from './components/Header';
 
 export default () => {
     
@@ -35,7 +36,7 @@ export default () => {
 
 return(
     <div className='pages'>
-
+        <Header/>
         {featuredData && 
         <FeaturedMovie item={featuredData}
         />}
@@ -46,6 +47,9 @@ return(
         ))}
 
         </section>
+        <footer>
+            <span>Direitos de imagem para Netflix</span>
+        </footer>
 
 
     </div>
